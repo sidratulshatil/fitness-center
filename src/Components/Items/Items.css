@@ -1,0 +1,10 @@
+.exercise {
+    margin-left: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.exercise-btn {
+    width: 100% !important
+}

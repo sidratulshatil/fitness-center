@@ -1,0 +1,38 @@
+[
+    {
+        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+        "name": "Push Up",
+        "img": "https://images.pexels.com/photos/176782/pexels-photo-176782.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "time": 3
+    },
+    {
+        "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+        "name": "Squat",
+        "img": "https://image.shutterstock.com/image-photo/perfect-squat-full-length-young-260nw-390234997.jpg",
+        "time": 6
+    },
+    {
+        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+        "name": "Plank",
+        "img": "https://blog-images.pharmeasy.in/2021/01/06152556/3.jpg",
+        "time": 4
+    },
+    {
+        "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+        "name": "Single Leg Deadlift",
+        "img": "https://i2.wp.com/joshwilliamsfitness.com/wp-content/uploads/2019/06/Man-doing-single-leg-deadlift.jpg?fit=810%2C581&ssl=1",
+        "time": 2
+    },
+    {
+        "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+        "name": "Dumble Row",
+        "img": "https://previews.123rf.com/images/xalanx/xalanx1404/xalanx140400150/27660431-man-doing-dumbbell-row-workout-for-back-muscles.jpg",
+        "time": 8
+    },
+    {
+        "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+        "name": "Burpees",
+        "img": "https://doctorlib.info/sport/mens-health-body/mens-health-body.files/image181.jpg",
+        "time": 5
+    }
+]
