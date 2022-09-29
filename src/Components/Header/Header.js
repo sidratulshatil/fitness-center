@@ -4,8 +4,8 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            <h2 className='header-text'> Fitness Center</h2>
-            <p>Choose Your Catagory</p>
+            <h2 className='header-text ms-3'> Fitness Center</h2>
+            <p className='ms-3'>Choose Your Catagory</p>
         </div>
     );
 };
