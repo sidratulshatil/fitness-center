@@ -1,7 +1,8 @@
 import React from 'react';
 import './Activity.css'
 import Button from 'react-bootstrap/Button';
-const Activity = () => {
+const Activity = (props) => {
+    console.log(props.cart)
     return (
         <div className='catagory-details'>
             <div>
@@ -15,8 +16,8 @@ const Activity = () => {
             </div>
             <div className='exercise-time '>
                 <h6 className='exercise-time-header'>Exercise Details</h6>
-                <h6 className='mt-3'>Exercise Time: </h6>
-                <h6 className='mt-3'>Break Time: </h6>
+                <h6 className='mt-3'>Exercise Time:{props.cart} min</h6>
+                <h6 className='mt-3'>Break Time: min</h6>
             </div>
             <div>
                 <Button className='exercise-btn mt-5' variant="success">Activity Completed</Button>

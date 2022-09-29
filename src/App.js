@@ -5,16 +5,14 @@ import Catagory from './Components/Catagory/Catagory';
 import { useState } from 'react';
 import Activity from './Components/Activity/Activity';
 
-function App() {
+function App(props) {
   return (
     <div className='main'>
       <div className='left-part'>
         <Header></Header>
         <Catagory></Catagory>
       </div>
-      <div>
-        <Activity></Activity>
-      </div>
+
     </div>
   );
 }

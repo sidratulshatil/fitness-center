@@ -1,13 +1,16 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Activity from '../Activity/Activity';
 import Items from '../Items/Items';
-import './Catagory.css'
+import './Catagory.css';
+
 
 
 const Catagory = () => {
 
     const [items, setItems] = useState([])
+    const [cart, setCart] = useState([0])
     useEffect(() => {
         fetch('types.json')
             .then(res => res.json())
@@ -17,12 +20,19 @@ const Catagory = () => {
 
 
     return (
-        <div className='item'>
-            {
-                items.map(item => <Items key={item.id} item={item}></Items>)
-            }
-
+        <div className='items'>
+            <div className='item'>
+                {
+                    items.map(item => <Items key={item.id} item={item} cart={cart} setCart={setCart}></Items>)
+                }
+            </div>
+            <div>
+                <Activity cart={cart}></Activity>
+            </div>
         </div>
+
+
+
     );
 };
 
