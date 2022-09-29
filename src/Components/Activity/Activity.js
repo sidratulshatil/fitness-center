@@ -1,8 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Activity.css'
 import Button from 'react-bootstrap/Button';
+import Swal from 'sweetalert2'
+
 const Activity = (props) => {
-    console.log(props.cart)
+
+
+
+
+    const [breakTime, setBreakT] = useState([0])
+    const c = []
+
+    const addToLocalStorage = (event, param) => {
+
+        const getBreak = localStorage.getItem('breakTime')
+        const a = JSON.parse(getBreak)
+
+        const setBreak = localStorage.setItem('breakTime', JSON.stringify(param))
+        setBreakT(getBreak)
+
+        const b = localStorage.getItem('breakTime')
+        c = b
+        console.log(a)
+    }
+
+    console.log(c)
+
+
+    const alert = () => {
+        Swal.fire(
+            'Good job!',
+            'You Have Done Your Exercise!',
+            'success'
+        )
+    }
+
     return (
         <div className='catagory-details'>
             <div>
@@ -12,15 +44,16 @@ const Activity = (props) => {
             </div>
             <div className='break-part'>
                 <h5 className='break-part-header'>Add A Break</h5>
-                <button >1 min</button><button>2 min</button><button>3 min</button><button>4 min</button><button>5 min</button>
+                <button onClick={event => addToLocalStorage(event, 1)} >1 min</button>
+                <button onClick={event => addToLocalStorage(event, 2)}>2 min</button><button onClick={event => addToLocalStorage(event, 3)}>3 min</button><button onClick={event => addToLocalStorage(event, 4)}>4 min</button><button onClick={event => addToLocalStorage(event, 5)}>5 min</button>
             </div>
             <div className='exercise-time '>
                 <h6 className='exercise-time-header'>Exercise Details</h6>
                 <h6 className='mt-3'>Exercise Time:{props.cart} min</h6>
-                <h6 className='mt-3'>Break Time: min</h6>
+                <h6 className='mt-3'>Break Time:{breakTime} min</h6>
             </div>
             <div>
-                <Button className='exercise-btn mt-5' variant="success">Activity Completed</Button>
+                <Button onClick={alert} className='exercise-btn mt-5' variant="success">Activity Completed</Button>
             </div>
         </div>
     );

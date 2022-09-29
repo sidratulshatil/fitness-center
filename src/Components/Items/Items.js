@@ -12,7 +12,7 @@ const Items = (props) => {
         if (cart) {
 
             const newExcersieTime = parseInt(cart) + time
-            console.log(typeof cart, typeof time)
+
             setCart(newExcersieTime)
         }
         else (
@@ -26,7 +26,7 @@ const Items = (props) => {
 
             <img src={img} alt="" />
             <h3>{name}</h3>
-            <h4>Time Required:{time}</h4>
+            <h4>Time Required:{time} min</h4>
             <Button onClick={handleAddToDetails} className='exercise-btn' variant="success">Add To List</Button>
 
         </div>

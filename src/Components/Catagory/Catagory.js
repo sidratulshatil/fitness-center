@@ -11,6 +11,8 @@ const Catagory = () => {
 
     const [items, setItems] = useState([])
     const [cart, setCart] = useState([0])
+
+
     useEffect(() => {
         fetch('types.json')
             .then(res => res.json())
@@ -19,15 +21,16 @@ const Catagory = () => {
 
 
 
+
     return (
         <div className='items'>
             <div className='item'>
                 {
-                    items.map(item => <Items key={item.id} item={item} cart={cart} setCart={setCart}></Items>)
+                    items.map(item => <Items key={item.id} item={item} cart={cart} setCart={setCart} ></Items>)
                 }
             </div>
             <div>
-                <Activity cart={cart}></Activity>
+                <Activity cart={cart} ></Activity>
             </div>
         </div>
 
