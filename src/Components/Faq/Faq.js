@@ -31,9 +31,17 @@ const Faq = () => {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
-                    <Accordion.Header>Accordion Item #2</Accordion.Header>
+                    <Accordion.Header> Rather than loading data what else are done by useEffect?</Accordion.Header>
                     <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        useEffect is one of the most essential React hooks. Whether you need to fetch data, update the DOM or run any other kind of “side effect”, useEffect allows you to execute code outside of the rendering loop, letting your app run smoothly. <br />
+                        Rather than loading data these types of works are done by useEffect <br />
+                        <span className='text-danger'>Examples:</span><br />
+                        1. Side Effect Runs After Every Render<br />
+                        2. Side Effect Runs Only Once After Initial Render<br />
+                        3. Side Effect Runs After State Value Changes<br />
+                        4. Side Effect Runs After Props Value Change<br />
+                        5. Side Effect Runs After Props and State Value Change<br />
+                        6. Side EffectCleanup
 
                     </Accordion.Body>
                 </Accordion.Item>
