@@ -11,6 +11,7 @@
 
 .break-part {
     margin-top: 30px;
+    text-decoration: underline
 }
 
 .break-part-header {
@@ -28,6 +29,7 @@
 .exercise-time-header {
     text-align: center;
     margin-top: 30px;
+    text-decoration: underline
 }
 
 @media only screen and (max-width: 768px) {
