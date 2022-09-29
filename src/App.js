@@ -8,7 +8,7 @@ import Activity from './Components/Activity/Activity';
 function App() {
   return (
     <div className='main'>
-      <div>
+      <div className='left-part'>
         <Header></Header>
         <Catagory></Catagory>
       </div>

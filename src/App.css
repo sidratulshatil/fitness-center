@@ -42,3 +42,13 @@
   display: grid;
   grid-template-columns: 3fr 1fr
 }
+
+.left-part {
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    display: inline
+  }
+}
