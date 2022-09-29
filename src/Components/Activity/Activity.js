@@ -1,30 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Activity.css'
 import Button from 'react-bootstrap/Button';
 import Swal from 'sweetalert2'
 
 const Activity = (props) => {
-
-
-
-
     const [breakTime, setBreakT] = useState([0])
-    const c = []
+    useEffect(() => {
+        const localStorageData = localStorage.getItem('breakTime')
 
+        setBreakT(localStorageData)
+    }, [breakTime])
     const addToLocalStorage = (event, param) => {
 
-        const getBreak = localStorage.getItem('breakTime')
-        const a = JSON.parse(getBreak)
-
         const setBreak = localStorage.setItem('breakTime', JSON.stringify(param))
-        setBreakT(getBreak)
+        setBreakT(setBreak)
 
-        const b = localStorage.getItem('breakTime')
-        c = b
-        console.log(a)
     }
 
-    console.log(c)
+
 
 
     const alert = () => {
