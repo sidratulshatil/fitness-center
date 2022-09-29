@@ -4,6 +4,7 @@ import Header from './Components/Header/Header';
 import Catagory from './Components/Catagory/Catagory';
 import { useState } from 'react';
 import Activity from './Components/Activity/Activity';
+import Faq from './Components/Faq/Faq';
 
 function App(props) {
   return (
@@ -12,7 +13,7 @@ function App(props) {
         <Header></Header>
         <Catagory></Catagory>
       </div>
-
+      <div><Faq></Faq></div>
     </div>
   );
 }

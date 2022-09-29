@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Activity from '../Activity/Activity';
+import Faq from '../Faq/Faq';
 import Items from '../Items/Items';
 import './Catagory.css';
 
@@ -32,6 +33,7 @@ const Catagory = () => {
             <div>
                 <Activity cart={cart} ></Activity>
             </div>
+
         </div>
 
 
